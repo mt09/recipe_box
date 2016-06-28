@@ -8,7 +8,7 @@ class RecipesController < ApplicationController
 	end
 
 	def create
-		@recipe = recipe.new(recipe_params)
+		@recipe = Recipe.new(recipe_params)
 
 		if @recipe.save
 			redirect_to @recipe, warning: "Successfully created new recipe"
@@ -20,6 +20,6 @@ class RecipesController < ApplicationController
 	private
 
 	def recipe_params
-		params.require(:recupe).permit(:title, :description)
+		params.require(:recipe).permit(:title, :description)
 	end
 end
