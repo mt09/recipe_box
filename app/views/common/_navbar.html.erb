@@ -10,9 +10,14 @@
 			<li><%= link_to "Home", root_path %></li>
 		</ul>
 
-		<ul class="nav navbar-nav">
-			<li><%= link_to "Sign up", "#" %></li>
-			<li><%= link_to "Sign in", "#" %></li>
+		<ul class="nav navbar-nav navbar-right">
+			<% if !current_user %>
+				<li><%= link_to "Sign up", new_user_registration_path %></li>
+				<li><%= link_to "Sign in", new_user_session_path %></li>
+			<% else %>
+				<li><%= link_to "Add new recipe", new_recipe_path %></li>
+				<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+			<% end %>
 		</ul>
 	</div>
 </nav>
