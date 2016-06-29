@@ -1,13 +1,13 @@
-<h2>Edit recipe</h2>
 <div class="col-md-6">
-<div class="panel panel-default">
-	<%= simple_form_for @recipe do |f| %>
-		<div class="panel-body">
-			<%= f.input :title %>
-			<%= f.input :description %>
-			<%= f.input :image, as: :file %>
-			<%= f.button :submit, data: {disable_with: "Submitting..."} %>
-		</div>
-	<% end %>
-</div>
+	<h2>Edit recipe</h2>
+	<div class="panel panel-default">
+		<%= simple_form_for @recipe do |f| %>
+			<div class="panel-body">
+				<%= f.input :title %>
+				<%= f.input :description %>
+				<%= f.input :image, as: :file %>
+				<%= f.button :submit, data: {disable_with: "Submitting..."} %>
+			</div>
+		<% end %>
+	</div>
 </div>

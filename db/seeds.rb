@@ -17,3 +17,7 @@ q.description = "A soufflé (French: [su.fle]) is a baked egg-based dish which o
 r = Recipe.new
 r.title = "Japanese Pancakes"
 r.description = "I adore Japanese hotcakes (Japanese style pancakes). They are sweeter and fluffier than the regular American style pancakes."
+
+s = Recipe.new
+s.title = "Chocolate Lava Cake"
+s.description = "Molten chocolate cake is a popular dessert that combines the elements of a flourless chocolate cake (sometimes called a chocolate decadence cake) and a soufflé. Some other names used are chocolate fondant, chocolate moelleux and chocolate lava cake."
