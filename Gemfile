@@ -4,6 +4,7 @@ gem "awesome_rails_console"
 gem "bootstrap-sass"
 gem "simple_form"
 gem "devise"
+gem "paperclip"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
