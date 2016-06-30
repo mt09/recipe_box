@@ -1,13 +1,7 @@
-<div class="col-md-6">
-	<h2>Edit recipe</h2>
-	<div class="panel panel-default">
-		<%= simple_form_for @recipe do |f| %>
-			<div class="panel-body">
-				<%= f.input :title %>
-				<%= f.input :description %>
-				<%= f.input :image, as: :file %>
-				<%= f.button :submit, data: {disable_with: "Submitting..."} %>
-			</div>
-		<% end %>
-	</div>
-</div>
+<h1>Edit recipe</h1>
+
+<%= render "form" %>
+
+<br>
+
+<%= link_to "Back", root_path, class: "btn btn-default" %>
