@@ -1,12 +1,13 @@
 Rails.application.configure do
-  config.paperclip_default = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV["s3_bucket"],
-      :access_key_id => ENV["s3_key"],
-      :secret_access_key => ENV["s3_key_secret"]
-    }
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['S3_key_id'],
+    :secret_access_key => ENV['S3_key_secret']
   }
+}
+
 
   # Settings specified here will take precedence over those in config/application.rb.
 
